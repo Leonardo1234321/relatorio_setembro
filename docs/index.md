@@ -28,18 +28,29 @@ Na mesma semana, foi testado outra ferramenta poderosa, o mermaid. Este é feito
   
 Nesta semana também foi feito um ensaio de acompanhamento especial com Lucas sob orientação do professor João.
   
-### Semana 02/09 - 06/09
+### Semana 02/09 - 06/09  
   
 Nesta semana introduziu-se a Oulu, um dos servidores do campus com acesso à área remota (RDP) baseado no sistema operacional Debian. O foco  era familiarizar-se com o acesso via SSH, RDP e HTTP (<http://oulu/>). Exemplo do acesso SSH:
 
     ssh -XY “nome do usuário”@oulu
 
-### Semana 02/09
+Em seguida, alguns testes foram feitos para verificar o script, em python, desenvolvido pelo professor Jurandy Soares, que automatizava a criação de usuários para uma aula na turma de INFO1V com acesso remoto à oulu.  
+  
+O Resultado da configuração dos usuários da conta oulu na turma de info1v foi positivo. A aula, do dia 05/10, fluiu normalmente e os alunos interagiram com os códigos um dos outros no sistema remoto concluindo o objetivo da aula de revisão de expressões em python.
 
+  
+### Semana 09/09 - 13/09
 
+A partir deste momento, foram feitos testes no script de correção das provas [Anexo 2](#anexos).  
+
+Em seguida, foram feito algumas simulações da criação de usuário definitivo na oulu com um script python 'cria-meu-usuario' desenvolvido por Jurandy. A simulação foi feita com o CSSH (Cluster Administration tool), permitindo o uso de diversas instâncias do xterm como se fossem uma "turma" completa.
+
+    cssh usuario-{01..40}@oulu
+
+O usuario-{01..40} representa que serão criadas 40 instâncias, indo de 1 até 40. O usuario-01, 02, 03, ... Já existem pois foram criados de forma temporaria na aula do dia 05/10, para que fossem criadas contas definitivas posteriormente. 
   
 ## Anexos
 
 1. Site de Documentação Markdown (host pelo github Pages): <https://leonardo1234321.github.io/demomd/>  
 
-2. 
+2. Repositório do script corretor (Desenvolvido por Jurandy): <https://github.com/jurandysoares/dycorrigir>
