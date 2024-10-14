@@ -1,5 +1,5 @@
-site_name: Relatório de estágio em {NOME_EMPRESA}
-site_author: {NOME_COMPLETO}
+site_name: Relatório do Programa De Tutoria de Aprendizagem e Laboratório
+site_author: Leonardo Furtado Kauffmann
 
 # O plugin mermaid2, usado para renderizar diagramas mermaid,
 # só funciona com o tema material.
